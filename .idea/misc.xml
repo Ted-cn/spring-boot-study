@@ -7,8 +7,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springboot01Helloworld/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-01-Helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-02-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-01-Helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-04-web-restfulcrud/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-02-config-auto/pom.xml" />
       </list>
     </option>
   </component>
