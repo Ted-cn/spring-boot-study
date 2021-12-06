@@ -1,0 +1,34 @@
+# 1. 基本语法
+# k: (space)v：表示一对键值对
+#     以空格的缩进来控制层级关系；只要是左对齐的一列数据，都是同一层级的。
+#     属性值是大小写敏感的
+server:
+  port: 8081
+
+message_zh: "你好\n我好"
+
+pets:
+  - cat
+  - dog
+  - pig
+
+# 2. 值的写法
+# 字面量：直接写，字符串不用加引号。
+#    "": 不会转义字符串里面的特殊字符
+#        name: "Tom \n Jerry" 会换行
+#    ''：会转义
+#        name: "Tom \n Jerry" 不会换行，\n就是字符串
+
+# 对象(Map): 在下一行写对象的属性和值；注意缩进
+# friend:
+#   name: 1
+#   age: 20
+
+#friend: {name: 1, age: 20}
+
+# 数组(Array、List、Set)
+# pets:
+#   - cat
+#   - dog
+#   - pig
+# pets: [cat, dog, pig]

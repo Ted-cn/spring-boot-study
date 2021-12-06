@@ -18,8 +18,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @SpringBootApplication 标注在某个类上，说明这个类是SpringBoot的主配置类，
  *                        SpringBoot就应该运行这个类的main方法来启动SpringBoot应用。
- * @SpringBootConfiguration 标注在某个类上，表示这是一个SpringBoot的配置类。
- * @EnableAutoConfiguration 开启自动配置功能；
+ *
+ *     @SpringBootConfiguration 标注在某个类上，表示这是一个SpringBoot的配置类。
+ *         @Configuration Spring定义，用来标注配置类
+ *             @Component Spring定义，用来标注组件
+ *
+ *     @EnableAutoConfiguration 开启自动配置功能。
+ *         @AutoConfigurationPackage 自动配置包
+ *             @Import(AutoConfigurationPackages.Registrar.class) 给容器中导入组件，组件由Registrar定义。通过断点Registrar类的registerBeanDefinitions方法的方式，
+ *                                                                发现是将主配置类（即@SpringBootApplication标注的类）所在包以及下面所有子包里面的所有组件扫描到
+ *                                                                 Spring容器中。
+ *
  *     @AutoConfigurationPackage
  */
 @SpringBootApplication
